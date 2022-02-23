@@ -202,9 +202,7 @@ export default function StockEdit({
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (
-  context: any,
-) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const result = await actions.doGetStockById(context.query.id)
 
   return {
