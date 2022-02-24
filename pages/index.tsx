@@ -12,9 +12,7 @@ export default function Index({}: Props): ReactElement {
 
 // called in server-side
 Index.getInitialProps = ({ res, err }) => {
-  if (res.url === '/') {
-    res.writeHead(301, { location: '/login' })
-    res.end()
-  }
+  res.writeHead(301, { location: '/login' })
+  res.end()
   return {}
 }
