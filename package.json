@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "export": "npm run build && next export -o _static"
+    "start": "next start",
+    "export": "next build && next export -o _static"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
